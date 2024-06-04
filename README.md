@@ -90,4 +90,4 @@ instructions for reporting a bug
 
 ### Contributing
 
-Please, for our development, leave your individual comment for more information.
+Please, for our development, leave your individual comment,for more information.
