@@ -90,4 +90,4 @@ instructions for reporting a bug
 
 ### Contributing
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for more info.
+Please, for our development, leave your individual comment for more information.
