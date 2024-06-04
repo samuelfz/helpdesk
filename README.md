@@ -8,6 +8,7 @@
 - Álvaro Vicente
 - Bruno José
 - Leonardo Luiz
+- Guilherme Gouveia
 - Samuel Fiuza
 - Vitor Hugo
 
