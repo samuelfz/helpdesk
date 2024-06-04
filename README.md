@@ -7,8 +7,8 @@
 **Alunos responsáveis:**
 - Álvaro Vicente
 - Bruno José
-- Leonardo Luiz
 - Guilherme Gouveia
+- Leonardo Luiz
 - Samuel Fiuza
 - Vitor Hugo
 
