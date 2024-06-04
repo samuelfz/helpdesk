@@ -1,0 +1,35 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>MeuProjetoServlet</servlet-name>
+        <servlet-class>MeuProjetoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DatabaseServlet</servlet-name>
+        <servlet-class>DatabaseServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>UserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MeuProjetoServlet</servlet-name>
+        <url-pattern>/ajax/MeuProjetoServlet/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DatabaseServlet</servlet-name>
+        <url-pattern>/ajax/DatabaseServlet/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/ajax/UserServlet/*</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>

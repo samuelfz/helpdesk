@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        label {
+            margin-top: 10px;
+            display: block;
+            color: #666;
+        }
+        input[type="text"], input[type="hidden"], input[type="date"], select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button, a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .formularios {
+          display: flex;
+          flex-direction: row;
+          gap: 15px;
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
+        .formularios form{
+          width: 100%;
+          margin: 0 auto;
+        }
+        form a {
+          margin-top: 20px;
+          display: block;
+          text-align: center;
+          text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="formularios">
+      <form action="ajax/DatabaseServlet" method="GET">
+          <h3>Cadastrar Patrimonio</h3>
+
+          <input type="hidden" name="action" value="cadastrar_patrimonio">
+
+          <label>nome</label><br>
+          <input type="text" name="nome"><br>
+          <label>descricao</label><br>
+          <input type="text" name="descricao"><br>
+          <label>data aquisicao</label><br>
+          <input type="date" name="data_aquisicao"><br>
+          <label>valor</label><br>
+          <input type="text" name="valor"><br>
+          <label>responsavel</label><br>
+          <input type="text" name="responsavel"><br>
+
+          <button type="submit">Cadastrar</button>
+          <br>
+          <a href="/ajax/DatabaseServlet?action=consultar_patrimonio">Consultar Clientes</a>
+      </form>
+      <form action="ajax/DatabaseServlet" method="GET">
+          <h3>Cadastrar Cliente</h3>
+
+          <input type="hidden" name="action" value="cadastrar_cliente">
+
+          <label>nome</label><br>
+          <input type="text" name="nome"><br>
+          <label>email</label><br>
+          <input type="text" name="email"><br>
+          <label>telefone</label><br>
+          <input type="text" name="telefone"><br>
+          <label>endereco</label><br>
+          <input type="text" name="endereco"><br>
+
+          <button type="submit">Cadastrar</button>
+          <br>
+          <a href="/ajax/DatabaseServlet?action=consultar_clientes">Consultar Patrimonio</a>
+      </form>
+      <form action="ajax/DatabaseServlet" method="GET">
+          <h3>Cadastrar Chamados</h3>
+
+          <input type="hidden" name="action" value="criar_chamado">
+
+          <label>Cliente ID</label><br>
+          <input type="text" name="cliente_id"><br>
+          <label>Patrimonio ID</label><br>
+          <input type="text" name="patrimonio_id"><br>
+          <label>Descrição</label><br>
+          <input type="text" name="descricao"><br>
+          <label>Status</label><br>
+          <select id="status" name="status">
+            <option value="Aberto">Aberto</option>
+            <option value="Em Progresso">Em Progresso</option>
+            <option value="Fechado">Fechado</option>
+          </select><br>
+          <label>Prioridade</label><br>
+          <input type="text" name="prioridade"><br>
+
+          <button type="submit">Criar Chamado</button>
+          <br>
+          <a href="/ajax/DatabaseServlet?action=consultar_chamados">Consultar Chamados</a>
+      </form>
+    </div>
+</body>
+</html>

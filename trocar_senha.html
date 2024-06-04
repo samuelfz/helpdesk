@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Trocar Senha</title>
+</head>
+<body>
+    <h1>Trocar Senha</h1>
+    <form id="trocarSenhaForm" action="ajax/DatabaseServlet" method="GET" onsubmit="return validarCampos()">
+        <input type="hidden" name="action" value="atualizar_senha">
+        <input type="hidden" name="pagina" value="senha_atualizada.jsp">
+
+        <label>Nome:</label><br>
+        <input type="text" name="nome" id="nome"><br><br>
+
+        <label>Senha:</label><br>
+        <input type="password" name="senha_antiga" id="senha_antiga"><br><br>
+
+        <label>Repita a senha:</label><br>
+        <input type="password" name="senha" id="senha"><br><br>
+
+        <button type="submit">Trocar Senha</button>
+    </form>
+
+    <script>
+        function validarCampos() {
+            var nome = document.getElementById('nome').value;
+            var senhaAntiga = document.getElementById('senha_antiga').value;
+            var senha = document.getElementById('senha').value;
+
+            if (!nome || !senhaAntiga || !senha) {
+                alert('Todos os campos devem ser preenchidos.');
+                return false;
+            }
+
+            if (senhaAntiga !== senha) {
+                alert('As senhas não são iguais!');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
