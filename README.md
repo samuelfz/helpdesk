@@ -1,16 +1,21 @@
-**Welcome to Apache Tomcat Projeto de desenvolvimento Helpdesk**
+**Bem-vindo ao Helpdesk do Apache Tomcat Projeto de desenvolvimento**
 
-**TEMA: Sistema Helpdesk**  
-**Tema proposto pelos professores Lucas Lima e Marcelo Paula**  
-**Matéria: Banco de Dados**
+**TEMA: 
+Sistema Helpdesk**  
 
-**Alunos responsáveis:**
-- Álvaro Vicente
-- Bruno José
-- Guilherme Gouveia
-- Leonardo Luiz
-- Samuel Fiuza
-- Vitor Hugo
+- Banco de Dados
+
+- Java
+
+- Tomcat
+
+**Projeto:**
+
+Este é um sistema de Helpdesk desenvolvido com a stack Java Web, usando Servlets, JSP, JDBC e Apache Tomcat como servidor de aplicação. Seu objetivo é facilitar o controle e gerenciamento de chamados técnicos dentro de uma organização, promovendo organização, rastreabilidade e comunicação entre usuários e técnicos.
+
+**Objetivo:**
+
+O sistema Helpdesk tem como propósito permitir que usuários possam registrar problemas técnicos, acompanhar o andamento de seus chamados e permitir que técnicos ou administradores possam gerenciá-los de forma prática.
 
 **USO DO TOMCAT:**
 ## Welcome to Apache Tomcat!
